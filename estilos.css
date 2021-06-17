@@ -1,0 +1,95 @@
+.container{
+    margin: 0 auto;
+    background-color: rgb(255, 70, 172);
+    display: flex;
+    width: 800px;
+    height: 800px;
+    padding: 10px;
+    border: solid 10px rgb(129, 10, 84);
+    border-radius: 10px;
+    transition:  all 0.5s ease-in-out;
+
+    /* flex-direction: column; */
+
+    /* El contenido no se desborda, se van creando más lineas */
+    flex-wrap: wrap;
+
+
+    /* flex-flox se especifica flex-direction:  y flex-wrap: ; */
+
+    /* justify-content:  space-evenly; */
+    /* Se alinean en el eje vertical  a la izquieda o derecha o centro, start o end.*/
+    /* space_between-> espacios entre los elementos, no entre el contenedor y el elemento. */
+    /* space-around->espacios entre los elementos y ahora si hay un pequeño espacio entre el elemento y el contenedor. */
+    /* space-evenly->espacio entre los elementos y entre los elementos y el contenedor. */
+    
+
+
+
+
+    /* Se alinean verticalmente, hay que especificar en cada elemento una altura */
+    /* align-items: flex-end; */
+    /* flex-star->coloca los elementos en la parte superior. */
+    /* flex-end->coloca los elementos en la parte inferior. */
+    /* flex-center->alinea los elementos en el centro */
+    /* flex-stretch->hace que la altura de los elementos sea la maxima disponible dentro del contenedor. */
+    /* flex-baseline->se asegura que la linea donde empieza el texto sea la misma para todos los elementos. */
+
+
+
+
+    /* align-content: ;
+    requiere: flex-flow: wrap o wrap-reverse   y muli linea */
+    /* star->posiciona en la parte superior. */
+    /* end->posiciona en la parte inferio. */
+    /* center->alinea verticalmente en el centro */
+    /* stretch->los elementos ocupe toda la altura del contenedor */
+    /* space-between->los elementos se encuentran arriba y abajo sin dejar espacios en los lados.
+    space-around->hay un espacio entre los elementos     */
+    /* gap:10px; representa un espacio equitativo entre elementos de 10px..no entre elementos y el contenedor. */
+
+
+    /* Aplicar ciertas propiedades  a elementos por separados */
+    /* order: 1; ->ayuda a posicionar los elementos en el orden que se le indique. */
+    /* flex-grow:1 ; asignamos el tamaño de cada elemento.  */
+    /* flex-shrink: ; por defecto tiene 1, es lo contrario que grow, se nota al encoger la pantalla. */
+    /* flex-basis: ; nos permite asignar un tamaño a los elementos dentro del contenedor.Ejemplo si ponemos un width:2000px a un elemento,se le asignará aunque desborde del contendor..mientras que con flex-basis, ese elemento se extenderá hasta llegar a los 2000px pero dentro del contenedor, si no alcanza los 2000px no se desborda, aunque al final se quede en 1500px. */
+    /* align-self: ; alieamos de form vertical. flex-start, flex-end,center,stretch,baseline. */
+    
+
+}
+
+.item-1{
+    height: 100px;
+    background-color: rgb(104, 123, 179);
+    padding: 3px;
+    border: solid 2px black;
+    margin: 2px;
+    order: 3;;
+
+}
+.item-2{
+    order:2;
+    flex-grow: 1;
+    height: 130px;
+    background-color: rgb(104, 123, 179);
+    padding: 3px;
+    border: solid 2px black;
+    margin: 2px;
+}
+.item-3{
+    order: 4;
+    height: 170px;
+    background-color: rgb(104, 123, 179);
+    padding: 3px;
+    border: solid 2px black;
+    margin: 2px;
+}
+.item-4{
+    order:1;
+    height: 200px;
+    background-color: rgb(104, 123, 179);;
+    padding: 3px;
+    border: solid 2px black;
+    margin: 2px;
+}
